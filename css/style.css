@@ -3,3 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container{
+    width: 1200px;
+    margin: 20px auto;
+}
+
+.main-header{
+    height: 100px;
+    background-color: rgb(215,	127, 224);
+}
+
+.main-container::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
