@@ -10,7 +10,7 @@
 }
 
 .main-header{
-    height: 100px;
+    height: 130px;
     background-color: rgb(215,	127, 224);
 }
 
@@ -18,16 +18,51 @@
    margin: 24px auto;
 }
 
-.main-container::after{
-    content: '';
-    display: table;
-    clear: both;
+.section,
+.section1{
+    height: 400px;
 }
 
 .section{
-    height: 400px;
     background-color: rgb(223,	214, 134);
 }
+
+.section1{
+    background-color: rgb(60, 131, 243);
+}
+
+.section1::after{
+    content: '';
+    display: table;
+    clear: both; 
+} /* clearfix */
+
+.header{
+    background-color: rgb(176,	203, 226);
+    height: 80px;
+    margin: 16px auto;
+    width: 100%;
+}
+
+.sidebar,
+.content{
+    height: calc(400px - 112px);
+    background-color:  rgb(176,	203, 226);
+    float: left; 
+}
+
+.sidebar{
+   width: calc(20% - 16px);
+}
+
+.content{
+    width: 60%;
+    margin: 0 16px;
+}
+
+
+
+
 
 /* .main-footer{
     height: 50px;
